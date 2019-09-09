@@ -1,0 +1,2 @@
+#! /usr/local/bin/fish
+find . -name '*.rkt' -o -name '*.scm' | entr fish -c 'raco test .'
