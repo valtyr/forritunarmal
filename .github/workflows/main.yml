@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Install racket and raco
-        run: sudo apt-get install racket zerotier-cli -y
+        run: sudo apt-get install racket -y
       - name: clone repo
         run: git clone https://github.com/valtyr/forritunarmal.git
       - name: Test code
