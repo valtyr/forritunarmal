@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Test code
         uses: jackfirth/racket-package-ci-action@v0.1.2
+        with:
+          name: forritunarmal
+ 
