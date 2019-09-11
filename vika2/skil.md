@@ -25,7 +25,7 @@ header-includes:
 
 # Dæmi {-}
 
-Skrifið fall `fcompose` sem tekur tvö viðföng, $f$ og $g$ sem hvort tveggja eiga að vera föll sem taka eitt viðfang. Kallið `(fcompose f g)` skal skila samsetta fallinu $f \circ g$, þ.e fallinu $h$ þar sem $h(x)$ skilar $f(g(x))$
+Skrifið fall `fcompose` sem tekur tvö viðföng, $f$ og $g$ sem hvort tveggja eiga að vera föll sem taka eitt viðfang. Kallið `(fcompose f g)`{.scm} skal skila samsetta fallinu $f \circ g$, þ.e fallinu $h$ þar sem $h(x)$ skilar $f(g(x))$
 
 _Lausn:_
 ```scheme
@@ -40,7 +40,7 @@ _Lausn:_
 
 # Dæmi {-}
 
-Skrifið Scheme fall `sqall`, sem tekur lista ($x_{1}$ ... $x_{n}$), sem viðfang, og skilar listanum ($x_{1}^{2}$ ... $x_{n}^{2}$). Til dæmis skal kallið `(sqall (list 1 2 3 4))` skila listanum `(1 4 9 16)`.
+Skrifið Scheme fall `sqall`, sem tekur lista ($x_{1}$ ... $x_{n}$), sem viðfang, og skilar listanum ($x_{1}^{2}$ ... $x_{n}^{2}$). Til dæmis skal kallið `(sqall (list 1 2 3 4))`{.scm} skila listanum `(1 4 9 16)`{.scm}.
 
 _Lausn:_
 ```scheme
@@ -64,7 +64,7 @@ _Lausn:_
 
 # Dæmi {-}
 
-Skrifið halaendurkvæmt Scheme fall `sqallrev`, sem tekur lista ($x_{1}$ ... $x_{n}$), sem viðfang, og skilar listanum ($x_{n}^{2}$ ... $x_{1}^{2}$). Til dæmis skal kallið `((myif 1 2) #t)` skila `1`, en `((myif 1 2) #f)` skal skila `2`.
+Skrifið halaendurkvæmt Scheme fall `sqallrev`, sem tekur lista ($x_{1}$ ... $x_{n}$), sem viðfang, og skilar listanum ($x_{n}^{2}$ ... $x_{1}^{2}$). Til dæmis skal kallið `((myif 1 2) #t)`{.scm} skila `1`, en `((myif 1 2) #f)`{.scm} skal skila `2`.
 
 _Lausn:_
 ```scheme
@@ -88,7 +88,7 @@ _Lausn:_
 
 # Dæmi {-}
 
-Skrifið Scheme fall `myif`, sem tekur tvö viðföng $x$ og $y$, og skilar falli, sem tekur gildi $z$, sem viðfang, og skilar $x$ ef $z$ er satt og $y$ ef $z$ er ekki satt. Til dæmis skal kallið `((myif 1 2) #t)` skila `1`, en `((myif 1 2) #f)` skal `2`.
+Skrifið Scheme fall `myif`, sem tekur tvö viðföng $x$ og $y$, og skilar falli, sem tekur gildi $z$, sem viðfang, og skilar $x$ ef $z$ er satt og $y$ ef $z$ er ekki satt. Til dæmis skal kallið `((myif 1 2) #t)`{.scm} skila `1`, en `((myif 1 2) #f)`{.scm} skal `2`.
 
 _Lausn:_
 ```scheme
