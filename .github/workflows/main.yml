@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Test code
+        uses: jackfirth/racket-package-ci-action@v0.1.2
