@@ -17,3 +17,9 @@ Prufunarskriftan notast við forritið [entr](http://entrproject.org) til að fy
 $ ./run-tests
 ```
 Prófin eru keyrð upp á nýtt hvert skipti sem skjal er vistað.
+
+### Undirbúningur PDF-skjala
+PDF skjöl eru búin til úr .md skjölum með því að keyra eftirfarandi skipun:
+```bash
+$ docker run --rm -v $PWD:/workdir --entrypoint "/source/clean-and-build.sh" valtyr/pandoc:latest
+```
