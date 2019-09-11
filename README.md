@@ -1,6 +1,6 @@
 ## Forritunarmál (TOL304G)
 
-![](https://github.com/valtyr/forritunarmal/workflows/CI/badge.svg)
+[![](https://github.com/valtyr/forritunarmal/workflows/CI/badge.svg)](https://github.com/valtyr/forritunarmal/actions)
 
 Skiladæmi fyrir áfangangann *_TOL304G_* í Háskóla Íslands.
 
