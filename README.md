@@ -21,5 +21,6 @@ Prófin eru keyrð upp á nýtt hvert skipti sem skjal er vistað.
 ### Undirbúningur PDF-skjala
 PDF skjöl eru búin til úr .md skjölum með því að keyra eftirfarandi skipun:
 ```bash
-$ docker run --rm -v $PWD:/workdir --entrypoint "/source/clean-and-build.sh" valtyr/pandoc:latest
+$ ./generate-pdfs
 ```
+Notast er við Docker image-ið `valtyr/pandoc` til að keyra pandoc og latex skipanir. Gætið þess að vera með Docker uppsett.
