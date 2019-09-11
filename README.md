@@ -12,6 +12,8 @@ Notast er við pandoc til að búa til PDF úr .md skjölum.
   - [Hópverkefni](vika2/skil.pdf)
 
 ### Keyrsla á prufunarkóða
+Prufunarskriftan notast við forritið [entr](http://entrproject.org) til að fylgjast með skjalabreytingum. Hægt er að setja upp entr í gegn um Homebrew og apt. Eftirfarandi skipun er keyrð til að hefja keyrslu prufana.
 ```bash
 $ ./run-tests
 ```
+Prófin eru keyrð upp á nýtt hvert skipti sem skjal er vistað.
