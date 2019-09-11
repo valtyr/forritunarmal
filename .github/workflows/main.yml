@@ -3,10 +3,9 @@ name: CI
 on: [push]
 
 jobs:
-  test:
-
+  test-scheme:
+    name: "Test scheme code"
     runs-on: ubuntu-latest
-    
     steps:
       - name: Install racket and raco
         run: sudo apt-get install racket -y
