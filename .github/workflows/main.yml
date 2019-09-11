@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Install racket and raco
-        run: apt-get install racket -y
+        run: sudo apt-get install racket -y
       - name: Test code
         run: raco test .
  
