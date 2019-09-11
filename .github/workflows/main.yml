@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Install racket and raco
+        run: apt-get install racket -y
       - name: Test code
-        uses: docker://jackfirth/racket@7.4-full
         run: raco test .
  
