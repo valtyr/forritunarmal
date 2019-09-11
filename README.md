@@ -1,5 +1,7 @@
 ## Forritunarmál (TOL304G)
 
+![](https://github.com/valtyr/forritunarmal/workflows/CI/badge.svg)
+
 Skiladæmi fyrir áfangangann *_TOL304G_* í Háskóla Íslands.
 
 Notast er við pandoc til að búa til PDF úr .md skjölum.
