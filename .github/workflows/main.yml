@@ -8,8 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Install racket and raco
-        run: sudo apt-get install racket -y
-      - name: Test code
-        run: raco test .
+#      - name: Install racket and raco
+#        run: sudo apt-get install racket -y
+#      - name: Test code
+#        run: raco test .
+      - name: "List"
+        run: ls -l
  
