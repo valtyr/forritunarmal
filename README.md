@@ -7,6 +7,10 @@ Skiladæmi fyrir áfangangann *_TOL304G_* í Háskóla Íslands.
 Notast er við pandoc til að búa til PDF úr .md skjölum.
 
 ### Yfirlit
+- __Vika 1__: Mál
+  - [Verkefnablað](vika1/verkefnablad.pdf)
+  - [Hópverkefni](vika1/submitted.pdf)
+  - [Einstaklingsverkefni](vika1/submitted_e.pdf)
 - __Vika 2__: Kynning á scheme
   - [Verkefnablað](vika2/verkefnablad.pdf)
   - [Hópverkefni](vika2/skil.pdf)
