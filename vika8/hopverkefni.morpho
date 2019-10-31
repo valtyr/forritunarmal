@@ -1,0 +1,49 @@
+"filter.mexe" = main in
+!
+{{
+
+reverse = fun(list) {
+  rec fun inner(newList, oldList) {
+    if(oldList) {
+      inner(head(oldList):newList, tail(oldList));
+    } else {
+      newList;
+    };
+  };
+  inner([], list);
+};
+
+;;;-------------------------------------------------------------------------;;;
+;;; Notkun: filter (p x)                                                    ;;;
+;;; Fyrir: p er fall                                                        ;;;
+;;;        x er listi [x1, . . . , xn]                                      ;;;
+;;; Gildi: Skilar lista þeirra gilda xi í x þannig að fallið p(xi) skilar   ;;;
+;;;        "satt" þ.e. þannig að skilagildið er hvorki null né false.       ;;;
+;;;-------------------------------------------------------------------------;;;
+filter = fun(f, list) {
+  rec fun inner(newList, oldList) {
+    if (oldList) {
+      if (f(head(oldList))) {
+        inner(head(oldList):newList, tail(oldList))
+      } else {
+        inner(newList, tail(oldList));
+      };
+    } else {
+      newList;
+    };
+  };
+  reverse(inner([], list));
+};
+
+
+main = fun() {
+  val filtered = filter(fun(a){a >= 0}, [-22, -3, 4, 5, 0, -5]);
+  writeln(filtered);
+};
+
+}}
+*
+BASIS
+;
+
+

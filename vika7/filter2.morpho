@@ -1,0 +1,36 @@
+"filter2.mexe" = main in
+!
+{{
+
+filter = fun(p,x)
+{
+  rec fun help(listi1,listi2)
+  {
+    if(!listi1) 
+    {
+      listi2;
+    }
+    else 
+    {
+      if(p(head(listi1)))
+      {
+        help(tail(listi1),listi2:head(listi1):[]);
+      }
+      else
+      {
+        help(tail(listi1),listi2);
+      };  
+    };
+  };
+  help(x,[]);
+};
+
+main = fun() {
+  val filtered = filter(fun(a){a >= 0}, [-22, -3, 4, 5, 0, -5]);
+  writeln(filtered);
+};
+
+}}
+*
+BASIS
+;

@@ -1,0 +1,100 @@
+;;;
+;;; Hönnun
+;;;
+;;;   Útflutt
+;;;     
+;;;     Notkun: s = stack();
+;;;     Eftir:  s verður að nýjum hlaða. Stærð hans
+;;;             hámarkast aðeins af minni tölvunnar.
+;;;
+;;;     Notkun: e = isEmpty(s);
+;;;     Fyrir:  s er hlaði
+;;;     Eftir:  e er sanngildi. true ef s er tómur
+;;;             annars false.
+;;;
+;;;     Notkun: e = isEmpty(s);
+;;;     Fyrir:  s er hlaði
+;;;     Eftir:  e er sanngildi. true ef s er tómur
+;;;             annars false.
+;;;
+;;;     Notkun: x = peek(s);
+;;;     Fyrir:  s er hlaði sem er ekki tómur.
+;;;     Eftir:  x verður að efsta gildinu í s.
+;;;             
+;;;     Notkun: y = pop(s);
+;;;     Fyrir:  s er hlaði sem er ekki tómur.
+;;;     Eftir:  y verður að efsta gildinu í s og það
+;;;             tekið af hlaðanum.
+;;;
+;;;     Notkun: push(x, s);
+;;;     Fyrir:  x er stak, s er hlaði.
+;;;     Eftir:  Bætir x efst í hlaðann s.
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Hönnunarskjali lýkur hér ;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+"stack.mmod" = 
+{{
+
+  ;;; Fastayrðing gagna: Hlaði sem inniheldur gildi
+  ;;; x1,x2,...,xN, frá toppi til botns er táknaður
+  ;;; með s = [x1,...,xN]
+
+  stack = fun () {
+    var f = [];
+    return &f;
+  };
+
+  isEmpty = fun (s) {
+    if (*s == null) {
+      return true
+    };
+    return false;
+  };
+
+  peek = fun (s) {
+    return head(*s);
+  };
+
+  pop = fun (s) {
+    var head = head(*s);
+    *s = tail(*s);
+    return head;
+  };
+
+  push = fun (x, s) {
+    *s = x:(*s);
+  };
+
+}}
+;
+
+show "stack.mmod";
+
+"stacktest.mexe" = main in
+{{
+  main =
+    fun () {
+      var x = [4,3,2,1];
+      var s = stack();
+
+      while (x) {
+        push(head(x), s);
+        x = tail(x);
+        writeln(*s);
+      };
+
+      while (!isEmpty(s)) {
+        writeln(peek(s));
+        var y = pop(s);
+        writeln(*s);
+      };
+    };
+}}
+
+*
+"stack.mmod"
+*
+BASIS
+;
